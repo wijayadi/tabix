@@ -69,7 +69,7 @@ const devServer = {
   liveReload: true,
   headers: { 'Access-Control-Allow-Origin': '*' },
   static: {
-    publicPath: '/',
+    publicPath: '/tabix/',
     directory: path.resolve(baseDir, 'app/public'),
   },
   // stats: 'minimal',
@@ -111,7 +111,7 @@ let common = {
   },
   output: {
     path: path.resolve(baseDir, 'dist'),
-    publicPath: '/',
+    publicPath: '/tabix/',
     filename: path.join('js', `[name].js?[fullhash:5]`),
   },
   resolve: {
